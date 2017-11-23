@@ -1,4 +1,5 @@
 #!/bin/sh
 
-cp ./.tmux.conf ~/
+
+cp -f ./.tmux.conf ~/
 
