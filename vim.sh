@@ -9,3 +9,6 @@ else
     cp ./my_configs.vim ~/.vim_runtime/
 fi
 
+git clone https://github.com/luochen1990/rainbow.git ~/.vim_runtim/sources_non_forked/
+
+
