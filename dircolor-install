@@ -1,0 +1,13 @@
+#!/bin/bash -x
+
+git submodule init submodules/dircolors-solarized
+git submodule update --progress submodules/dircolors-solarized
+
+SETUP_DIR=$(pwd)
+COLOR_DIR=$SETUP_DIR/submodules/dircolors-solarized
+
+cat <<EOT >> ~/.zshrc
+eval \`dircolors $COLOR_DIR/dircolors.256dark\`
+EOT
+
+

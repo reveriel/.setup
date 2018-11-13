@@ -1,0 +1,16 @@
+#!/bin/bash
+
+git submodule init submodules/tmux
+git submodule update --progress submodules/tmux
+
+SETUP_DIR=$(pwd)
+TMUX_DIR=$SETUP_DIR/submodules/tmux
+
+cd
+ln -s -f $TMUX_DIR/.tmux.conf
+ln -s -f $TMUX_DIR/.tmux.conf.local
+
+
+
+
+
