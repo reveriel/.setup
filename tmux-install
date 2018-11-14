@@ -1,7 +1,17 @@
 #!/bin/bash
 
+source common.sh
+
+GIT_VERSION=$(git --version | cut -d' ' -f3)
+
+F_GIT=""
+
+if version_ge $GIT_VERSION "2.11.0" ; then
+	F_GIT="--progress"
+fi
+
 git submodule init submodules/tmux
-git submodule update --progress submodules/tmux
+git submodule update $F_GIT submodules/tmux
 
 SETUP_DIR=$(pwd)
 TMUX_DIR=$SETUP_DIR/submodules/tmux
