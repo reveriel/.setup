@@ -6,3 +6,6 @@
 	path = submodules/tmux
 	url = https://github.com/reveriel/.tmux.git
 	shallow = true
+[submodule "submodules/vimrc"]
+	path = submodules/vimrc
+	url = https://www.github.com/reveriel/vimrc
