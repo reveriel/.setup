@@ -1,5 +1,7 @@
 #!/bin/sh
 
+
+
 if [ -d ~/.vim_runtime ]
 then
     cp -f ./my_configs.vim ~/.vim_runtime
