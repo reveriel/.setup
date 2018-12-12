@@ -1,14 +1,16 @@
 # Basic setups for new computers
 
-
 - vim
 - emacs
 - tmux
 - ssh
+- zsh
 
 ## vim
 
-https://github.com/amix/vimrc
+addapted from [amix's vimrc](https://github.com/amix/vimrc)
+
+## tmux
 
 
 ## git submodule shallow copy
