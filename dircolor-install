@@ -1,7 +1,18 @@
 #!/bin/bash -x
 
+source common.sh
+
+GIT_VERSION=$(git --version | cut -d' ' -f3)
+
+F_GIT=""
+
+if version_ge $GIT_VERSION "2.11.0" ; then
+	F_GIT="--progress"
+fi
+
+
 git submodule init submodules/dircolors-solarized
-git submodule update --progress submodules/dircolors-solarized
+git submodule update $F_GIT submodules/dircolors-solarized
 
 SETUP_DIR=$(pwd)
 COLOR_DIR=$SETUP_DIR/submodules/dircolors-solarized
