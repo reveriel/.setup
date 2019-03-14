@@ -58,7 +58,7 @@ function init() {
 function update() {
     echo "update"
     cd $VIMRC_DIR
-    git sumbodule init
+    git submodule init
     git submodule update $F_GIT
 }
 
